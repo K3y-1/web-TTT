@@ -1,16 +1,31 @@
 .Board{
-  height: 300px;
-  width: 300px;
+  height: 320px;
+  width: 320px;
   display: inherit;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: -moz-linear-gradient(45deg, #d0d00f, #ff600f);
-  background: -webkit-linear-gradient(45deg, #d0d00f, #ff600f);
+  background: -moz-linear-gradient(45deg, #d0d00f, #ff200f);
+  background: -webkit-linear-gradient(45deg, #d0d00f, #ff200f);
   border-radius: 50px;
   box-shadow: inset 5px 5px 5px 5px white,
               inset -5px -5px 5px 5px rgb(60, 100, 60);
 }
 .row{
   display: flex;
+}
+
+#turn{
+  position: relative;
+  bottom: -25px;
+  margin: 0px;
+  font-size: 2rem;
+  height: 50px;
+  width: 60px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: #ef600f;
+  border-radius: 30px;
+  box-shadow: inset 3px 3px 3px 3px white,
+              inset -3px -3px 3px 3px rgb(60, 100, 60);
 }
