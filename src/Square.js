@@ -3,7 +3,7 @@ import './Square.css';
 
 function Square(props){
   return (
-  <div className="Square"
+  <div id="Square"
        onClick={() => {
          if(props.value == null){
          props.setValues(props.i);

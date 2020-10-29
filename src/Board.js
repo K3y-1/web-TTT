@@ -51,11 +51,12 @@ function Board() {
     squares.push(<div className="row">{row}</div>);
   }
 
-  return (
+  return [
+  <p id="turn">{turn}</p>,
   <div className="Board">
     {squares}
   </div>
-);
+];
 }
 
 export default Board;
