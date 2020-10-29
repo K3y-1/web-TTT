@@ -1,0 +1,16 @@
+.Board{
+  height: 300px;
+  width: 300px;
+  display: inherit;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: -moz-linear-gradient(45deg, #d0d00f, #ff600f);
+  background: -webkit-linear-gradient(45deg, #d0d00f, #ff600f);
+  border-radius: 50px;
+  box-shadow: inset 5px 5px 5px 5px white,
+              inset -5px -5px 5px 5px rgb(60, 100, 60);
+}
+.row{
+  display: flex;
+}

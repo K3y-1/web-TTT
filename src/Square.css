@@ -1,0 +1,17 @@
+.Square {
+  height: 50px;
+  width: 50px;
+  padding: 10px;
+  margin: 6px;
+  background-color: teal;
+  border-radius: 10px;
+  border: 1px solid blue;
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Square:hover {
+  border: 2px solid black;
+}
