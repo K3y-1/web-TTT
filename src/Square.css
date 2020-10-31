@@ -14,5 +14,6 @@
 }
 
 #Square:hover {
-  border: 2px solid black;
+  border: 1px solid black;
+  box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.5);
 }
