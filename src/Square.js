@@ -6,8 +6,8 @@ function Square(props){
   <div id="Square"
        onClick={() => {
          if(props.value == null){
-         props.setValues(props.i);
-         props.toggleTurn();
+           props.toggleTurn();
+           props.setValues(props.i);
          }
        }}>
     {props.value}

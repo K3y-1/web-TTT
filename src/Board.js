@@ -3,6 +3,7 @@ import Square from './Square';
 import './Board.css';
 
 function checkWinner(matrix){
+  let nullValue = 0;
   let directions = [
     [0, 1, 2],
     [3, 4, 5],
@@ -17,8 +18,13 @@ function checkWinner(matrix){
     if(matrix[i[0]] === matrix[i[1]] && matrix[i[0]] === matrix[i[2]] && matrix[i[0]] !== null){
       return 1;
     }
+    if(matrix[i[0]] === null || matrix[i[0]] === null || matrix[i[0]] === null)
+      nullValue = 1;
   }
-  return 0;
+  if(nullValue)
+    return 0;
+  else
+    return -1;
 }
 
 function Board() {
@@ -35,11 +41,14 @@ function Board() {
     let v = vals;
     v[i] = turn;
     setVals(v);
-    if(checkWinner(v)){
+    let win = checkWinner(v);
+    if(win === 1){
       toggleTurn();
       alert("Game is finished,\nthe winner is:\n"+turn);
       setVals([null, null, null, null, null, null, null, null, null]);
-      setTurn('X');
+    }else if(win === -1){
+      alert("Game is finished,\ndraw");
+      setVals([null, null, null, null, null, null, null, null, null]);
     }
   }
 
